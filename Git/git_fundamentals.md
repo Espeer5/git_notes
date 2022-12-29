@@ -21,9 +21,11 @@
     - groups all changes made from previous version into a single version change
     - commands:
         1. git add: stages a particular edited file for commitment
+            * . - adds all changes
         2. git commit: Move added changes from staging area to the repo, including commit message
             * -m -> use the following commit message
             * -a -> commits all current changes
+            3. git log: retrieves info about the commit history for a repo
 5. Vocab:
     - Working Directory: local version of the repo, potentially having unsaved changes
     - Staging area: Changes that are prepared to be committed from the working directory to the repo
