@@ -21,4 +21,4 @@
     - Not you cannot delete a branch which is currently checked out
 - Renaming a branch:
     * First, checkout the branch
-    * git branch -m [name]
+    * git branch -M [name]
