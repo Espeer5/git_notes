@@ -11,4 +11,7 @@
 - Creating a branch:
     * git branch [branch-name] - creates but does not checkout a new branch with the given name
     * git switch - switches to a different branch
-    
+    * git push -u origin [branch] - publishes a new branch to Github
+- Git checkout - has a million different functions, but can be used for the same thing as switch
+    * We can also create and automatically switch to a new branch using git switch -c [branch_name]
+- Changes to a branch are stored locally, andwill be deleted if not committed or stashed prior to switching to another branch
