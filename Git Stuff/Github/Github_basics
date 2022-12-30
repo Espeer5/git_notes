@@ -1,0 +1,9 @@
+# Basics of Github
+- What is Github?
+    * A hosting platform for Git repos
+    * Git is a VCS, but Github is a web hosted platform that hosts Git repos that people can collaborate on
+    * Github is the largest such platform, followed by Gitlab
+- Cloning
+    * Cloning is how we create a local version of a cloud hosted repo on our machine (such as a repo hosted on Github)
+    * git clone [link]
+    
