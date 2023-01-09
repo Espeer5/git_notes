@@ -49,6 +49,9 @@
             1. Stream 0 = stdin
             2. Stream 1 - stdout
             3. Stream 2 = stderr
-        - < redirect 
-        - ">" redirect output
+        - < redirects strea 0
+        - ">" redirect stream 1
         - 2> redirects stream 2
+        - &> redirects streams 1 and 2 *(ex: &> /dev/null silences output)
+        - One redirection overwrites, 2 redirection symbols will append
+
