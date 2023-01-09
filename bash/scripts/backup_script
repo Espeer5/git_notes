@@ -2,15 +2,27 @@
 
 # Author: Edward Speer
 # Date Created: 1/7/2023
-# Last Modeified: 1/7/2023
+# Last Modeified: 1/8/2023
 
 # Description:
-# This script simply created tar compressed backup files of my home directory
+# This script simply creates tar compressed backup files of the home directory 
+# located in the directory the script is run from
 
 # Usage:
-# Run the script from home directory and it will produce a .tar backup of your 
-# home directory which will be created in your home directory
+# Run the script from a directory and it will produce a .tar backup of your home
+# directory inside the current directory
 
-tar -cvf ~/bash_course/my_backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar ~/* 2>/dev/null
+echo "Hello ${USER^}"
+echo "I will now back up your home directory, $HOME"
+
+currentdir=$(pwd)
+
+echo "You are running this script from $currentdir"
+echo "Therefore I will save the backup in $currentdir"
+
+tar -cf ${currentdir}/my_backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar $HOME/* 2>/dev/null
+
+echo "Backup completed successfully"
+
 exit 0
 
